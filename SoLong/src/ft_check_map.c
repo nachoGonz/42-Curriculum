@@ -6,7 +6,7 @@
 /*   By: iggonzal <iggonzal@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 13:02:56 by iggonzal          #+#    #+#             */
-/*   Updated: 2023/08/10 01:09:59 by iggonzal         ###   ########.fr       */
+/*   Updated: 2023/08/10 01:25:30 by iggonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_error(t_vars **v, char *err)
 	exit(1);
 }
 
-static void	check_is_rectangular(t_vars **vars)
+static void	check_is_rectangular(t_vars **v)
 {
 	int	y_map;
 	int	x_map;
@@ -36,17 +36,17 @@ static void	check_is_rectangular(t_vars **vars)
 
 	y_map = 0;
 	backup = 0;
-	height = get_height((*vars)->map);
+	height = get_height((*v)->map);
 	while (y_map != height)
 	{
 		x_map = 0;
-		while ((*vars)->map[y_map][x_map] != '\0')
+		while ((*v)->map[y_map][x_map] != '\0')
 			x_map++;
 		y_map++;
 		if (backup != 0)
 		{
 			if (backup != x_map)
-				ft_error(vars,
+				ft_error(v,
 					"\033[1;31m🛑ERROR: map is not rectangular\033[0m");
 		}
 		else
@@ -90,9 +90,9 @@ static void	check_surrounded_by_walls(t_vars **v)
 		ft_error(v, err);
 }
 
-void	check_map_valid(t_vars *vars)
+void	check_map_valid(t_vars *v)
 {
-	check_is_rectangular(&vars);
-	check_surrounded_by_walls(&vars);
-	check_elements(&vars);
+	check_is_rectangular(&v);
+	check_surrounded_by_walls(&v);
+	check_elements(&v);
 }

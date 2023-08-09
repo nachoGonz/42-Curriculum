@@ -6,7 +6,7 @@
 /*   By: iggonzal <iggonzal@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 13:02:48 by iggonzal          #+#    #+#             */
-/*   Updated: 2023/08/10 01:09:56 by iggonzal         ###   ########.fr       */
+/*   Updated: 2023/08/10 01:24:37 by iggonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,31 +47,31 @@ char	*unknown_element(t_vars **v, char c)
 	exit(1);
 }
 
-void	check_elements(t_vars **vars)
+void	check_elements(t_vars **v)
 {
 	t_map_vars	map;
 
 	map.c = 0;
 	map.p = 0;
 	map.e = 0;
-	map.y = get_height((*vars)->map) - 1;
+	map.y = get_height((*v)->map) - 1;
 	while (map.y--)
 	{
 		map.x = 0;
-		while ((*vars)->map[map.y][map.x] != '\0')
+		while ((*v)->map[map.y][map.x] != '\0')
 		{
-			if ((*vars)->map[map.y][map.x] == 'E')
+			if ((*v)->map[map.y][map.x] == 'E')
 				map.e++;
-			else if ((*vars)->map[map.y][map.x] == 'P')
+			else if ((*v)->map[map.y][map.x] == 'P')
 				map.p++;
-			else if ((*vars)->map[map.y][map.x] == 'C')
+			else if ((*v)->map[map.y][map.x] == 'C')
 				map.c++;
-			else if ((*vars)->map[map.y][map.x] != '1' &&
-				(*vars)->map[map.y][map.x] != '0')
-				unknown_element(vars, (*vars)->map[map.y][map.x]);
+			else if ((*v)->map[map.y][map.x] != '1' &&
+				(*v)->map[map.y][map.x] != '0')
+				unknown_element(v, (*v)->map[map.y][map.x]);
 			map.x++;
 		}
 	}
 	if (map.c == 0 || map.p == 0 || map.e == 0 || map.p > 1)
-		ft_error(vars, ft_err_message(&map));
+		ft_error(v, ft_err_message(&map));
 }
