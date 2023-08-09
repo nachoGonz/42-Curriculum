@@ -6,11 +6,11 @@
 /*   By: iggonzal <iggonzal@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 13:03:02 by iggonzal          #+#    #+#             */
-/*   Updated: 2023/08/06 22:41:54 by iggonzal         ###   ########.fr       */
+/*   Updated: 2023/08/10 01:10:02 by iggonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long.h"
+#include "so_long.h"
 
 void	exit_door(t_vars **v)
 {

@@ -6,11 +6,11 @@
 /*   By: iggonzal <iggonzal@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 13:03:41 by iggonzal          #+#    #+#             */
-/*   Updated: 2023/05/28 14:49:44 by iggonzal         ###   ########.fr       */
+/*   Updated: 2023/08/10 01:09:28 by iggonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../so_long.h"
+#include "../so_long.h"
 
 static void	cpy(char *dst, char const *src, int n)
 {

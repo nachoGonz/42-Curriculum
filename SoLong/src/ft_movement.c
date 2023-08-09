@@ -6,11 +6,11 @@
 /*   By: iggonzal <iggonzal@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 13:03:27 by iggonzal          #+#    #+#             */
-/*   Updated: 2023/08/06 22:42:22 by iggonzal         ###   ########.fr       */
+/*   Updated: 2023/08/10 01:10:10 by iggonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long.h"
+#include "so_long.h"
 
 static void	collected(t_vars **v)
 {

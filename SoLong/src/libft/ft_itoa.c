@@ -6,11 +6,11 @@
 /*   By: iggonzal <iggonzal@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 13:03:16 by iggonzal          #+#    #+#             */
-/*   Updated: 2023/05/28 14:49:52 by iggonzal         ###   ########.fr       */
+/*   Updated: 2023/08/10 01:09:25 by iggonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../so_long.h"
+#include "../so_long.h"
 
 static int	ft_size(int num)
 {

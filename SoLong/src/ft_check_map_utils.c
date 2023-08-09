@@ -6,11 +6,11 @@
 /*   By: iggonzal <iggonzal@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 13:02:48 by iggonzal          #+#    #+#             */
-/*   Updated: 2023/08/06 22:45:31 by iggonzal         ###   ########.fr       */
+/*   Updated: 2023/08/10 01:09:56 by iggonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long.h"
+#include "so_long.h"
 
 static char	*ft_err_message(t_map_vars *map)
 {

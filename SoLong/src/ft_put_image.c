@@ -6,11 +6,11 @@
 /*   By: iggonzal <iggonzal@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 13:03:32 by iggonzal          #+#    #+#             */
-/*   Updated: 2023/08/06 22:39:29 by iggonzal         ###   ########.fr       */
+/*   Updated: 2023/08/10 01:10:44 by iggonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../so_long.h"
+#include "so_long.h"
 
 void	put_image(t_vars **v, int x, int y, char *img)
 {

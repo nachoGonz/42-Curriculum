@@ -6,7 +6,7 @@
 #    By: iggonzal <iggonzal@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/26 13:00:36 by iggonzal          #+#    #+#              #
-#    Updated: 2023/08/06 13:38:00 by iggonzal         ###   ########.fr        #
+#    Updated: 2023/08/10 01:08:28 by iggonzal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ SOURCE 	=	./src/libft/ft_stringjoin.c				\
 			./src/ft_check_map_utils.c			\
 			./src/ft_check_map.c					\
 			./src/ft_exit_door.c					\
-			so_long.c
+			./src/so_long.c
 
 LIBRARY := -Lminilibx -lmlx -framework OpenGL -framework AppKit
 MINILIBX := minilibx/
